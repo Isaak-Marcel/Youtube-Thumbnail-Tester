@@ -122,33 +122,33 @@ intprofile2.addEventListener('change', (event) => {
 // Word counter
 
 function updateLetterCount() {
-  // Hämta textarean med id:t "input-title-1"
-  
-  // Räkna antalet bokstäver i texten i textarean
+  // Get the textarea with the id "input-title-1"
+
+  // Count the number of characters in the text in the textarea
   var letterCount = textArea1.value.length;
-  // Hämta headingen med id:t "letterCount1"
+  // Get the heading with the id "letterCount1"
   var letterCountHeading = document.getElementById("letterCount1");
-  // Sätt innehållet i headingen till värdet av letterCount
+  // Set the content of the heading to the value of letterCount
   letterCountHeading.textContent = `Characters: ${letterCount}`;
 }
 
-// Kalla på updateLetterCount-funktionen när texten i textarean ändras
+// Call the updateLetterCount function when the text in the textarea changes
 document.getElementById("input-titile-1").addEventListener("input", updateLetterCount);
 
 
 
 
 function updateLetterCount2() {
-  // Hämta textarean med id:t "input-title-2"
+  // Get the textarea with the id "input-title-2"
   var textarea2 = document.getElementById("input-titile-2");
 
-  // Räkna antalet bokstäver i texten i textarean
+  // Count the number of characters in the text in the textarea
   var letterCount = textarea2.value.length;
-  // Hämta headingen med id:t "letterCount2"
+  // Set the content of the heading to "Characters: " and letterCount
   var letterCountHeading = document.getElementById("letterCount2");
   // Sätt innehållet i headingen till "Letters: " och letterCount
   letterCountHeading.textContent = `Characters: ${letterCount}`;
 }
 
-// Kalla på updateLetterCount-funktionen när texten i textarean ändras
+// Call the updateLetterCount function when the text in the textarea changes
 document.getElementById("input-titile-2").addEventListener("input", updateLetterCount2);
